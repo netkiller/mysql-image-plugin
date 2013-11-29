@@ -8,7 +8,7 @@ Author: netkiller<netkiller@msn.com>
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "images.h"
+#include "image.h"
 
 /* ------------------------ image_check ----------------------------- */
 
@@ -59,7 +59,6 @@ my_bool image_move_init(UDF_INIT *initid, UDF_ARGS *args, char *message)
     return 1;
   }
 
-  get_safenet_env();
   args->arg_type[0]= STRING_RESULT;
 
   return 0;
@@ -88,8 +87,6 @@ void image_move_deinit(UDF_INIT *initid)
 
 my_bool image_remove_init(UDF_INIT *initid, UDF_ARGS *args, char *message)
 {
-
-    get_safenet_env();
     return 0;
 }
 
