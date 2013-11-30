@@ -119,7 +119,13 @@ char *image_move(UDF_INIT *initid, UDF_ARGS *args,
 {
 
     char *data;
-    data = "image_move";
+
+	if( rename(args->args[0], args->args[1]) == 0 ){
+		data = "true";
+	}else{
+		data = "false";
+	}
+	//asprintf(&data, "ARG0=%s, ARG1=%d", args->args[0], args->args[1]);
     *length = strlen(data);
     return ((char *)data);
 

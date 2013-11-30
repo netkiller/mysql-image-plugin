@@ -21,16 +21,16 @@ Plugin
 	drop function image_remove;
 	drop function image_rename;
 	drop function image_crc32;
-	drop function image_md5sum;
+	drop function image_move;
 	
 	create function image_check returns string soname 'image.so';
 	create function image_remove returns string soname 'image.so';
 	create function image_rename returns string soname 'image.so';
 	create function image_crc32 returns string soname 'image.so';
-	create function image_md5sum returns string soname 'image.so';
+	create function image_move returns string soname 'image.so';
 
-	select image_check('/tmp/filename');
-	select image_remove('/tmp/filename');
-	select image_rename('/tmp/aa','/tmp/bb');
-	select image_crc32('/tmp/test.jpg');
-	select image_md5sum('/tmp/test');
+	select image_check('/path/filename.ext');
+	select image_remove('/path/filename.ext');
+	select image_rename('/path/oldfile.ext','/path/newfile.ext');
+	select image_crc32('/path/filename.ext');
+	select image_move('/path/filename.ext','/path/to/newfile.ext');
