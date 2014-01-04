@@ -6,7 +6,7 @@ Author: netkiller<netkiller@msn.com>
 #include <stdio.h>
 #include <mysql.h>
 #include <string.h>
-#include <io.h>
+#include <sys/io.h>
 #include <openssl/md5.h>
 #include "image.h"
 

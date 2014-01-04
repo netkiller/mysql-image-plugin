@@ -11,3 +11,13 @@ Makefile.in
 /depcomp
 /install-sh
 /missing
+
+/CMakeCache.txt
+
+/CMakeFiles/*
+
+/Makefile
+
+/*.cmake
+
+/install_manifest.txt
