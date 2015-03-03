@@ -41,3 +41,7 @@ Example
 	select image_rename('/path/oldfile.ext','/path/newfile.ext');
 	select image_crc32('/path/filename.ext');
 	select image_move('/path/filename.ext','/path/to/newfile.ext');
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/netkiller/mysql-image-plugin/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
