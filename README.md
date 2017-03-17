@@ -44,6 +44,15 @@ Example
 	select image_crc32('/path/filename.ext');
 	select image_move('/path/filename.ext','/path/to/newfile.ext');
 
+# Donations
+
+We accept PayPal through:
+
+https://www.paypal.me/netkiller
+
+Wechat (微信) / Alipay (支付宝) 打赏:
+
+http://www.netkiller.cn/home/donations.html
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/netkiller/mysql-image-plugin/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
