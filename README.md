@@ -5,6 +5,11 @@ mysql-image-plugin
 
 Build
 -----
+	cd /usr/local/src/
+	git clone https://github.com/netkiller/mysql-image-plugin.git
+ 	cd mysql-image-plugin/
+ 	yum install cmake
+
 	cmake .
 	make && make install
 	
@@ -24,17 +29,22 @@ Test
 	
 Plugin
 ------
-	drop function image_check;
-	drop function image_remove;
-	drop function image_rename;
-	drop function image_crc32;
-	drop function image_move;
+
+### Install
 	
 	create function image_check returns string soname 'libimage.so';
 	create function image_remove returns string soname 'libimage.so';
 	create function image_rename returns string soname 'libimage.so';
 	create function image_crc32 returns string soname 'libimage.so';
 	create function image_move returns string soname 'libimage.so';
+
+### Uninstall
+
+	drop function image_check;
+	drop function image_remove;
+	drop function image_rename;
+	drop function image_crc32;
+	drop function image_move;
 
 Example 
 -------	
